@@ -16,6 +16,10 @@ body {
   background-color: #FFFFFF;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #container {
   width: 100%;
   padding: 40px 10%;
