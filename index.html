@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Translator - Project Studio</title>
+  </head>
+  <body>
+    <div id="container">
+      <input id="translate-input" type="text" placeholder="Введите текст" />
+      <img src="assets/arrows.png" alt="translate" />
+      <input id="translation" type="text" placeholder="Перевод" readonly />
+    </div>
+    <div id="footer">
+      <div class="selector">
+        <span id="from-lang" attr-value="russian">Русский</span>
+        <div class="list">
+          <ul>
+            <li><button class="option from" value="russian">Русский</button></li>
+            <li><button class="option from" value="english">Английский</button></li>
+            <li><button class="option from" value="spanish">Испанский</button></li>
+          </ul>
+        </div>
+      </div>
+      <img src="assets/forward.png" alt="translate" id="switch" />
+      <div class="selector">
+        <span id="to-lang" attr-value="english">Английский</span>
+        <div class="list right">
+          <ul>
+            <li><button class="option to" value="russian">Русский</button></li>
+            <li><button class="option to" value="english">Английский</button></li>
+            <li><button class="option to" value="spanish">Испанский</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script async src="js/dictionary.js"></script>
+    <script async src="js/translator.js"></script>
+  </body>
+</html>
