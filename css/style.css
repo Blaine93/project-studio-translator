@@ -148,6 +148,7 @@ input[type=text]#translate-input, input[type=text]#translation {
   transition: .3s;
   border-radius: 10px;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 #footer img:hover {
